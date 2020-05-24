@@ -1,0 +1,23 @@
+{
+  "name": "recur-menu",
+  "description": "menus",
+  "main": "dist/recur-menu.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development"
+  },
+  "keywords": [
+    "block-menu"
+  ],
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/a653398363/recur-menu.git"
+  },
+  "author": "xiaofanqie<653398363@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^6.0.6",
+    "vue": "^2.5.2"
+  }
+}
