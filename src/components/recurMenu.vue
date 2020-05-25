@@ -14,7 +14,6 @@
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
 import menuItem from './menuItem'
 export default {
   name: 'recurMenu',
@@ -45,12 +44,6 @@ export default {
   },
   components: {
     menuItem
-  },
-  computed: {
-    ...mapGetters([
-      'menus',
-      'recurMenu'
-    ])
   }
 }
 </script>

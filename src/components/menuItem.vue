@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'sidebarItem',
+  name: 'menuItem',
   props: {
     menus: {
       type: Array
@@ -47,7 +47,6 @@ export default {
   created () {
   },
   mounted () {
-    this.getLang()
   },
   methods: {
     handleOpen (key, keyPath) {
@@ -60,14 +59,6 @@ export default {
       var params = !menu.params ? {} : menu.params
       params.menuId = menu.keyId
       return params
-    },
-    getLang () {
-      this.lang = localStorage.getItem('lang')
-      if (!this.lang || this.lang === 'cn') {
-        this.show = true
-      } else {
-        this.show = false
-      }
     }
   }
 }
